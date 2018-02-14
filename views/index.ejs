@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+    <h1>Welcome to Express!</h1>
+    <form action="/submit" method="POST">   
+       Name: <input type="text" name="name">
+       Age: <input type="text" name="age">
+       <input type="submit" value="Submit me!">
+    </form>
+
+    <% for(user of data){ %> 
+        <hr>
+        <p>Name: <%= user.name %> </p>
+        <p>Age: <%= user.age %> </p> 
+    <% } %>
+</body>
+</html>
